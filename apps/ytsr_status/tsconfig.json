@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      "outDir": "./priv/static/js",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "allowSyntheticDefaultImports": false,
+      "target": "es2015",
+      "jsx": "react",
+      "baseUrl": "./",
+      "noEmit": true,
+      "skipLibCheck": true,
+      "lib": [
+        "es2016",
+        "dom",
+        "esnext"
+      ],
+      "paths": {
+        "src": ["./lib/ytsr_status/web/static/js"],
+      },
+      "typeRoots": [
+        "node_modules/@types"
+      ]
+    },
+    "include": [
+      "./src/**/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist",
+      "**/*.spec.ts",
+      "**/*.spec.tsx",
+      "**/*.test.ts",
+      "**/*.test.tsx"
+    ]
+  }
